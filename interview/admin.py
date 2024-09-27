@@ -22,7 +22,7 @@ class CandidateAdmin(admin.ModelAdmin):
 
 
     # 排序字段
-    ordering = ( 'hr_result', 'second_result', 'first_result' )
+    ordering = ( 'hr_result', 'second_result', 'first_result' ) 
 
 
 
