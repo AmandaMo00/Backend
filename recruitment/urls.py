@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
-
+from django.utils.translation import gettext as _ 
 
 urlpatterns = [
     path("", include("jobs.urls")),
@@ -27,3 +27,4 @@ urlpatterns = [
 #     path("^hello/$", hello),
 
 # ]    
+admin.site.site_header = _ ('某科技招聘管理系统') # 起名 使用translation包改成中文 
